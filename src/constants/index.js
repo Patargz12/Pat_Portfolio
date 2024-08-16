@@ -136,6 +136,10 @@ const technologies = [
   },
 ];
 
+const isMobile = window.innerWidth <= 768; // Check if the device width is less than or equal to 768px
+
+const visibleTechnologies = isMobile ? technologies.slice(0, 5) : technologies;
+
 const experiences = [
   {
     title: "Software Engineer Intern",
@@ -399,4 +403,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, visibleTechnologies, experiences, testimonials, projects };
