@@ -32,7 +32,6 @@ import {
   python,
   bootstrap,
   wordpress,
-  c,
   rivan_web,
   pokemon,
   pulp,
@@ -45,6 +44,8 @@ import {
   pat_cafe,
   patgpt,
   jquery,
+  ionic,
+  pulp_clinic,
 } from "../assets";
 
 export const navLinks = [
@@ -91,12 +92,8 @@ const technologies = [
     icon: laravel,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
+    name: "Ionic",
+    icon: ionic,
   },
   {
     name: "React JS",
@@ -106,33 +103,15 @@ const technologies = [
     name: "nextjs",
     icon: nextjs,
   },
-  {
-    name: "python",
-    icon: python,
-  },
-  {
-    name: "bootstrap",
-    icon: bootstrap,
-  },
+
   {
     name: "MongoDB",
     icon: mongodb,
   },
-  {
-    name: "JQuery",
-    icon: jquery,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
+
   {
     name: "wordpress",
     icon: wordpress,
-  },
-  {
-    name: "c",
-    icon: c,
   },
 ];
 
@@ -168,7 +147,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "June 2023 - June 2024",
     points: [
-      "Established an IT event about Angular with Mr. Seiji Villafranca a software engineer based in Canada.",
+      "Established an IT event about Angular with a software engineer based in Canada.",
       "Developed a mobile application using Flutter and Firebase",
       "Created a small application using NoSQL database which is MongoDB.",
       "Exposure on technologies around JWT (JSON Web Token) and Vercel.",
@@ -176,7 +155,7 @@ const experiences = [
       "Created several programs using MVC architecture and Single-page applications.",
       "Got a solid foundation on github and git technologies.",
       "Exposure in SDLC, Agile and Waterfall Methodology.",
-      "Work with CMS platforms.",
+      "Worked with CMS platforms.",
     ],
   },
   {
@@ -264,10 +243,10 @@ const projects = [
   {
     name: "Pulp Dental Clinic",
     description:
-      "My first Laravel Project which is a website for my father’s dental clinic. After the project, I got a deep understanding on how MVC architecture, Inertia JS works.",
+      "I developed a landing page for a dental clinic using ReactJS, utilizing five front-end libraries to enhance animations, components, and overall functionality. ",
     tags: [
       {
-        name: "Laravel",
+        name: "ReactJS",
         color: "blue-text-gradient",
       },
       {
@@ -275,12 +254,12 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "Livewire",
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: pulp,
-    source_code_link: "https://github.com/Patargz12/pulp",
+    image: pulp_clinic,
+    source_code_link: "https://pulp-clinic.vercel.app/",
   },
   {
     name: "RoadSpeak",

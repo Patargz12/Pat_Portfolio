@@ -12,6 +12,9 @@ import Experience from "./Experience";
 import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
+import Toast from "./Toast";
+import Planet from "./Planet";
+import Email from "./Email";
 import Footer from "./Footer";
 
 export {
@@ -27,5 +30,8 @@ export {
   BallCanvas,
   ComputersCanvas,
   StarsCanvas,
+  Toast,
+  Planet,
   Footer,
+  Email,
 };

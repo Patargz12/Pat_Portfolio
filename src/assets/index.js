@@ -29,6 +29,7 @@ import bootstrap from "./tech/bootstrap.png";
 import wordpress from "./tech/wordpress.png";
 import c from "./tech/c.png";
 import jquery from "./tech/jquery.svg";
+import ionic from "./tech/ionic.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -52,6 +53,7 @@ import ixhibit from "./ixhibit.png";
 import youtube from "./youtube.png";
 import pat_cafe from "./pat_cafe.png";
 import patgpt from "./patgpt.png";
+import pulp_clinic from "./Pulp_Clinic.jpg";
 
 import rob from "./rob.jpg";
 import froi from "./froi.jpg";
@@ -109,4 +111,6 @@ export {
   pat_cafe,
   patgpt,
   jquery,
+  ionic,
+  pulp_clinic,
 };

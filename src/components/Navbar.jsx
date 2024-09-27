@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
@@ -8,10 +8,28 @@ import { logo, menu, close, pat_logo } from "../assets";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${
+        styles.paddingX
+      } w-full fixed top-0 z-20 transition-all duration-300 ease-in-out ${
+        isScrolled ? "py-8 bg-primary " : "py-5 "
+      }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link

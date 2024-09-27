@@ -1,26 +1,66 @@
 body {
-  cursor: none;
+  cursor: none !important;
+}
+
+* {
+  cursor: none !important;
 }
 
 .cursor-dot {
   width: 5px;
   height: 5px;
   background-color: white;
+  visibility: visible; /* Make sure cursor-dot is visible by default */
+}
+
+.cursor-none {
+  cursor: none;
 }
 
 .cursor-outline {
   width: 30px;
   height: 30px;
   border: 2px solid hsla(0, 0%, 100%, 0.5);
+  visibility: visible; /* Make sure cursor-outline is visible by default */
 }
 
 .cursor-dot,
 .cursor-outline {
+  border-radius: 50%;
   position: fixed;
   top: 0;
   left: 0;
   transform: translate(-50%, -50%);
-  border-radius: 50%;
   z-index: 1;
   pointer-events: none;
+  visibility: visible;
+}
+
+.cursor-none {
+  cursor: none;
+}
+
+body.loading .cursor-dot,
+body.loading .cursor-outline {
+  visibility: hidden; /* Hide custom cursor during loading */
+}
+
+body[data-aos-duration="4000"] [data-aos],
+[data-aos][data-aos][data-aos-duration="4000"] {
+  transition-duration: 4000ms;
+}
+
+body[data-aos-delay="4000"] [data-aos],
+[data-aos][data-aos][data-aos-delay="4000"] {
+  transition-delay: 4000ms;
+}
+
+body[data-aos-duration="5000"] [data-aos],
+[data-aos][data-aos][data-aos-duration="5000"] {
+  transition-duration: 5000ms;
+}
+
+body[data-aos-delay="5000"] [data-aos],
+[data-aos][data-aos][data-aos-delay="5000"] {
+  transition-delay: 5000ms;
 }

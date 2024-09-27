@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import Planet from "./Planet";
 
 const Hero = () => {
   return (
@@ -14,12 +15,21 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1
+            className={`${styles.heroHeadText} text-white`}
+            data-aos="fade-right"
+            data-aos-delay="3000"
+            data-aos-duration="4000"
+          >
             Hi, I'm <span className="text-[#915eff]"> Patrick</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop Software, Websites, <br className="sm:block hidden" /> and
-            Mobile Apps.
+          <p
+            className={`${styles.heroSubText} mt-2 text-white-100`}
+            data-aos="fade-right"
+            data-aos-delay="4000"
+            data-aos-duration="4000"
+          >
+            I develop Websites and Mobile Apps.
           </p>
         </div>
       </div>

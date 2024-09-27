@@ -1,23 +1,18 @@
-import { useState, useRef } from "react";
-import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
-import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
-import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
-
 const Contact = ({ setShowToast }) => {
-  console.log(setShowToast);
+  // Receive setShowToast as a prop
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
   });
+
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { target } = e;
+    const { name, value } = target;
+
     setForm({ ...form, [name]: value });
   };
 
@@ -41,23 +36,24 @@ const Contact = ({ setShowToast }) => {
       .then(
         () => {
           setLoading(false);
-          console.log("Toast turned true!");
-          alert("Email sent successfully");
-          // Show the toast when the email is successfully sent
-          setShowToast(true);
+          setShowToast(true); // Show the toast on successful submission
 
-          window.location.reload();
-
+          // Reset the form
           setForm({
             name: "",
             email: "",
             message: "",
           });
+
+          // Hide the toast after 5 seconds
+          setTimeout(() => {
+            setShowToast(false);
+          }, 8000);
         },
         (error) => {
           setLoading(false);
           console.log(error);
-          alert("Something went wrong.");
+          alert("Something Went Wrong.");
         }
       );
   };
@@ -85,7 +81,10 @@ const Contact = ({ setShowToast }) => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 
+              placeholder:text-secondary text-white 
+              rounded-lg outlined-none border-none
+              font-medium"
             />
           </label>
 
@@ -98,7 +97,10 @@ const Contact = ({ setShowToast }) => {
               onChange={handleChange}
               required
               placeholder="What's your email?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 
+              placeholder:text-secondary text-white 
+              rounded-lg outlined-none border-none
+              font-medium"
             />
           </label>
 
@@ -106,12 +108,16 @@ const Contact = ({ setShowToast }) => {
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
               rows="7"
+              type="text"
               name="message"
               required
               value={form.message}
               onChange={handleChange}
               placeholder="What do you want to say?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 
+              placeholder:text-secondary text-white 
+              rounded-lg outlined-none border-none
+              font-medium"
             />
           </label>
 
