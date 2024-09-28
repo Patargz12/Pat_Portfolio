@@ -15,6 +15,7 @@ import Contact from "./Contact";
 import Toast from "./Toast";
 import Planet from "./Planet";
 import Email from "./Email";
+import Astro from "./Astro";
 import Footer from "./Footer";
 
 export {
@@ -32,6 +33,7 @@ export {
   StarsCanvas,
   Toast,
   Planet,
+  Astro,
   Footer,
   Email,
 };

@@ -1,5 +1,6 @@
 body {
   cursor: none !important;
+  overflow-x: hidden;
 }
 
 * {
@@ -40,6 +41,10 @@ body {
   cursor: none;
 }
 
+.loading {
+  overflow: hidden; /* Disable scrollbar */
+}
+
 body.loading .cursor-dot,
 body.loading .cursor-outline {
   visibility: hidden; /* Hide custom cursor during loading */
@@ -63,4 +68,27 @@ body[data-aos-duration="5000"] [data-aos],
 body[data-aos-delay="5000"] [data-aos],
 [data-aos][data-aos][data-aos-delay="5000"] {
   transition-delay: 5000ms;
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #000000; /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #915eff; /* Color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7c4dff; /* Color of the scrollbar thumb on hover */
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin; /* Options: auto, thin */
+  scrollbar-color: #915eff #000000; /* thumb color and track color */
 }

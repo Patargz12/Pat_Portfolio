@@ -4,10 +4,10 @@ import { visibleTechnologies } from "../constants";
 
 const Tech = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-center gap-10">
-      {visibleTechnologies.map((visibleTechnologies) => (
-        <div className="w-28 h-28" key={visibleTechnologies.name}>
-          <BallCanvas icon={visibleTechnologies.icon} />
+    <div className="relative flex flex-wrap justify-center gap-10">
+      {visibleTechnologies.map((technology) => (
+        <div className="w-28 h-28" key={technology.name}>
+          <BallCanvas icon={technology.icon} />
         </div>
       ))}
     </div>
