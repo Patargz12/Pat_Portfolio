@@ -46,6 +46,8 @@ import {
   jquery,
   ionic,
   pulp_clinic,
+  praxxys,
+  nuxt,
 } from "../assets";
 
 export const navLinks = [
@@ -96,8 +98,8 @@ const technologies = [
     icon: ionic,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "Nuxt",
+    icon: nuxt,
   },
   {
     name: "nextjs",
@@ -120,6 +122,21 @@ const isMobile = window.innerWidth <= 768; // Check if the device width is less 
 const visibleTechnologies = isMobile ? technologies.slice(0, 5) : technologies;
 
 const experiences = [
+  {
+    title: "Front-End Developer Trainee",
+    company_name: "PRAXXYS Solutions Inc.",
+    icon: praxxys,
+    iconBg: "#383E56",
+    date: "Oct 2024 - Jan 2025",
+    points: [
+      "Turned Figma designs into web applications following coding standards using NuxtJS and ShadCN.",
+      "Deployed code to production through CI/CD pipelines.",
+      "Collaborated with designers, senior developers, and operations teams to meet client requirements.",
+      "Built applications using existing NuxtJS boilerplates developed by senior engineers.",
+      "Integrated APIs into front-end applications for seamless functionality.",
+      "Developed applications aligned with the User Journey and related documentation",
+    ],
+  },
   {
     title: "Software Engineer Intern",
     company_name: "Rivan Cyber Training Institute",

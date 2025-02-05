@@ -24,6 +24,7 @@ import threejs from "./tech/threejs.svg";
 import flutter from "./tech/flutter.png";
 import laravel from "./tech/laravel.png";
 import nextjs from "./tech/nextjs.png";
+import nuxt from "./tech/nuxt.png";
 import python from "./tech/python.png";
 import bootstrap from "./tech/bootstrap.png";
 import wordpress from "./tech/wordpress.png";
@@ -35,6 +36,7 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import rivan from "./company/Rivan.png";
+import praxxys from "./company/praxxys.png";
 import ue from "./company/ue.png";
 import gdsc from "./company/gdsc.png";
 import tesla from "./company/tesla.png";
@@ -113,4 +115,6 @@ export {
   jquery,
   ionic,
   pulp_clinic,
+  praxxys,
+  nuxt,
 };
