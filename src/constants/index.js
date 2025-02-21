@@ -48,6 +48,8 @@ import {
   pulp_clinic,
   praxxys,
   nuxt,
+  netflix_clone,
+  crypto_tracker,
 } from "../assets";
 
 export const navLinks = [
@@ -216,25 +218,25 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Rivan Talent",
+    name: "Netflix Clone",
     description:
-      "A headhunting website I created using Wordpress Colibri for my internship at Rivan Cyber Institute, which also contains SMTP features.",
+      "A personal project replicating Netflix's core functionalities, developed using Netflix's design system to practice Zustand and TanStack Query.",
     tags: [
       {
-        name: "Wordpress",
+        name: "ReactJS",
         color: "blue-text-gradient",
       },
       {
-        name: "Elementor",
+        name: "RESTfulAPI",
         color: "green-text-gradient",
       },
       {
-        name: "Colibri",
+        name: "Zustand",
         color: "pink-text-gradient",
       },
     ],
-    image: rivan_web,
-    source_code_link: "https://rivanhrsource.com/",
+    image: netflix_clone,
+    source_code_link: "https://netflix-clone-arganza.vercel.app/",
   },
   {
     name: "Pokemon Game",
@@ -321,26 +323,25 @@ const projects = [
     source_code_link: "https://github.com/Patargz12/iXhibit",
   },
   {
-    name: "Mini Netflix",
+    name: "Crypto Tracker",
     description:
-      "A movie web application that I created to practice API integration and Javascript. It is a mini Netflix website which contains data of several movies.",
+      "A web application I built that displays real-time crypto exchange rates using the CoinGecko API and features MetaMask wallet authentication to show Ethereum balances.",
     tags: [
       {
-        name: "Javascript",
+        name: "NuxtJS",
         color: "blue-text-gradient",
       },
       {
-        name: "bootstrap",
+        name: "Ethers",
         color: "green-text-gradient",
       },
       {
-        name: "api",
+        name: "Web3",
         color: "pink-text-gradient",
       },
     ],
-    image: netflix,
-    source_code_link:
-      "https://mininetflix-pfx1yzkaa-patargz12s-projects.vercel.app/",
+    image: crypto_tracker,
+    source_code_link: "https://crypto-app-arganza.vercel.app/",
   },
   {
     name: "Youtube Clone",

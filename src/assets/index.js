@@ -56,9 +56,13 @@ import youtube from "./youtube.png";
 import pat_cafe from "./pat_cafe.png";
 import patgpt from "./patgpt.png";
 import pulp_clinic from "./Pulp_Clinic.jpg";
+import netflix_clone from "./Netflix_Clone.jpg";
+import crypto_tracker from "./crypto_tracker.png";
 
 import rob from "./rob.jpg";
 import froi from "./froi.jpg";
+import gmail from "./gmail.png";
+import phone from "./phone.png";
 
 export {
   logo,
@@ -117,4 +121,8 @@ export {
   pulp_clinic,
   praxxys,
   nuxt,
+  netflix_clone,
+  crypto_tracker,
+  gmail,
+  phone,
 };

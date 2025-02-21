@@ -74,9 +74,9 @@ const StyledWrapper = styled.div`
     height: fit-content;
     background-color: transparent;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 25px 25px;
+    align-items: start;
+    justify-content: start;
+    margin-top: 6px;
     gap: 20px;
   }
 

@@ -5,123 +5,31 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { gmail, phone } from "../assets";
+import Socials from "./Socials";
 
-const Contact = ({ setShowToast }) => {
-  console.log(setShowToast);
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    emailjs
-      .send(
-        "service_aynre9k",
-        "template_0djdw3e",
-        {
-          from_name: form.name,
-          to_name: "Patrick",
-          from_email: form.email,
-          to_email: "arganzapatrick@gmail.com",
-          message: form.message,
-        },
-        "YTNzT_KGGcEfXdmNO"
-      )
-      .then(
-        () => {
-          setLoading(false);
-          console.log("Toast turned true!");
-          alert("Email sent successfully");
-          // Show the toast when the email is successfully sent
-          setShowToast(true);
-
-          window.location.reload();
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.log(error);
-          alert("Something went wrong.");
-        }
-      );
-  };
-
+const Contact = () => {
   return (
-    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-4 overflow-hidden">
+    <div className="xl:mt-12 w-full xl:flex-row flex-col-reverse flex gap-4 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
-        >
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your name</span>
-            <input
-              type="text"
-              name="name"
-              required
-              value={form.name}
-              onChange={handleChange}
-              placeholder="What's your name?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
-            />
-          </label>
+        <div className=" fleX flex-col space-y-24">
+          <div className="flex flex-col space-y-2">
+            <h3 className={styles.sectionHeadText}>Contact.</h3>
 
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Email</span>
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              required
-              placeholder="What's your email?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
-            />
-          </label>
+            <h2 className="">Email: arganzapatrick@gmail.com</h2>
+            <h2 className="">Phone: +63 994 4100 776</h2>
+          </div>
 
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Message</span>
-            <textarea
-              rows="7"
-              name="message"
-              required
-              value={form.message}
-              onChange={handleChange}
-              placeholder="What do you want to say?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
-            />
-          </label>
-
-          <button
-            type="submit"
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
-        </form>
+          <div className="flex flex-col justify-start ">
+            <h1 className="text-2xl mb-2 font-bold">Learn more.</h1>
+            <Socials />
+          </div>
+        </div>
       </motion.div>
 
       <motion.div
