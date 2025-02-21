@@ -17,7 +17,7 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
 
-        <div className=" fleX flex-col space-y-24">
+        <div className=" fleX flex-col space-y-16">
           <div className="flex flex-col space-y-2">
             <h3 className={styles.sectionHeadText}>Contact.</h3>
 
