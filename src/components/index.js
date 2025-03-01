@@ -17,6 +17,7 @@ import Planet from "./Planet";
 import Email from "./Email";
 import Astro from "./Astro";
 import Footer from "./Footer";
+import Stack from "./Stack";
 
 export {
   Hero,
@@ -36,4 +37,5 @@ export {
   Astro,
   Footer,
   Email,
+  Stack,
 };

@@ -14,6 +14,7 @@ import {
   Toast,
   Planet,
   Footer,
+  Stack,
 } from "./components";
 
 const App = () => {
@@ -60,8 +61,10 @@ const App = () => {
             <Toast />
           </div>
           <About />
-          <Experience />
           <Tech />
+          <Stack />
+          <Experience />
+
           <Works />
           <div className="relative z-0">
             <Contact />
