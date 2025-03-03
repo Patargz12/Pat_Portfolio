@@ -53,7 +53,7 @@ import roadspeak from "./roadspeak.png";
 import netflix from "./netflix.png";
 import ixhibit from "./ixhibit.png";
 import youtube from "./youtube.png";
-import pat_cafe from "./pat_cafe.png";
+import pat_cafe from "./pat_cafe.jpg";
 import patgpt from "./patgpt.png";
 import pulp_clinic from "./Pulp_Clinic.jpg";
 import netflix_clone from "./Netflix_Clone.jpg";
