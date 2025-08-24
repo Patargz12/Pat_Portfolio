@@ -47,6 +47,7 @@ import {
   ionic,
   pulp_clinic,
   praxxys,
+  meter,
   nuxt,
   netflix_clone,
   crypto_tracker,
@@ -125,10 +126,25 @@ const visibleTechnologies = isMobile ? technologies.slice(0, 5) : technologies;
 
 const experiences = [
   {
+    title: "Frontend Developer",
+    company_name: "Media Meter Inc. ",
+    icon: meter,
+    iconBg: "#B3B1B1",
+    date: "Mar 2025 - Present",
+    points: [
+      "Developed a Law Related Chatbot application",
+      "Developed an AI conversational website",
+      "Deploy applications using Kubernetes, Docker and AWS technologies.",
+      "Built applications using existing NuxtJS boilerplates developed by senior engineers.",
+      "Collaborated across teams to fulfill CEO expectations.",
+      "Worked in Agile environment.",
+    ],
+  },
+  {
     title: "Front-End Developer Trainee",
     company_name: "PRAXXYS Solutions Inc.",
     icon: praxxys,
-    iconBg: "#383E56",
+    iconBg: "#B3B1B1",
     date: "Oct 2024 - Jan 2025",
     points: [
       "Turned Figma designs into web applications following coding standards using NuxtJS and ShadCN.",
@@ -143,7 +159,7 @@ const experiences = [
     title: "Software Engineer Intern",
     company_name: "Rivan Cyber Training Institute",
     icon: rivan,
-    iconBg: "#383E56",
+    iconBg: "#B3B1B1",
     date: "Jan 2024 - April 2024",
     points: [
       "Created a full-stack Laravel crash course.",
@@ -163,7 +179,7 @@ const experiences = [
     title: "Mobile Development Lead",
     company_name: "Google Developer Student Club",
     icon: gdsc,
-    iconBg: "#E6DEDD",
+    iconBg: "#B3B1B1",
     date: "June 2023 - June 2024",
     points: [
       "Established an IT event about Angular with a software engineer based in Canada.",
@@ -181,7 +197,7 @@ const experiences = [
     title: "Robotics Instructor",
     company_name: "University of the East",
     icon: ue,
-    iconBg: "#383E56",
+    iconBg: "#B3B1B1",
     date: "Jan 2022 - Jan 2023",
     points: [
       "Configured a robotic device to maneuver, rotate and accelerate",

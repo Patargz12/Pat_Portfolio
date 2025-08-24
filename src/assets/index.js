@@ -37,6 +37,7 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import rivan from "./company/Rivan.png";
 import praxxys from "./company/praxxys.png";
+import meter from "./company/Media_Logo.png";
 import ue from "./company/ue.png";
 import gdsc from "./company/gdsc.png";
 import tesla from "./company/tesla.png";
@@ -125,4 +126,5 @@ export {
   crypto_tracker,
   gmail,
   phone,
+  meter,
 };

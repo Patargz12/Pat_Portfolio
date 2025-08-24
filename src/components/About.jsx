@@ -45,11 +45,11 @@ const About = () => {
         variants={fadeIn(" ", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        A full-stack software engineer with background knowledge in PHP
-        frameworks like Laravel, CodeIgniter, and other JS frameworks like
-        NextJS and ReactJS. Adequate knowledge of mobile development using
-        Flutter and React Native. I also created a project with machine learning
-        and Artificial intelligence using YOLOv8 and CNN algorithm.
+        A full-stack software engineer with strong Expertise in Node,
+        Express,and other JS frameworks. Adequate knowledge of mobile
+        development using Flutter and React Native. I also created a project
+        with machine learning and Artificial intelligence using YOLOv8 and CNN
+        algorithm. I also enjoy joining hackathons and coding events.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

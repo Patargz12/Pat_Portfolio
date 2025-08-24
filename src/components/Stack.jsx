@@ -46,7 +46,7 @@ const techStackData = {
         },
         {
           name: "Frameworks & Libraries",
-          skills: ["ReactJS", "NuxtJS", "TailwindCSS"],
+          skills: ["ReactJS", "NextJS", "NuxtJS", "TailwindCSS"],
         },
         {
           name: "Mobile & Cross-platform",
@@ -69,7 +69,7 @@ const techStackData = {
         },
         {
           name: "Databases",
-          skills: ["MySQL", "MongoDB", "NoSQL"],
+          skills: ["MySQL", "MongoDB", "NoSQL", "Supabase"],
         },
         {
           name: "API Development",
